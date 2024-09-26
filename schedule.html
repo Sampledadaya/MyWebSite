@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактирование расписания</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Редактирование расписания</h1>
+
+        <!-- Таблица для отображения расписания -->
+        <table id="scheduleTable" border="1">
+            <thead>
+                <tr>
+                    <th>День недели</th>
+                    <th>Время</th>
+                    <th>Четная неделя</th>
+                    <th>Нечетная неделя</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Данные будут загружены динамически -->
+            </tbody>
+        </table>
+
+        <button id="saveBtn">Сохранить изменения</button>
+    </div>
+
+    <!-- Подключаем библиотеку SheetJS через CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
