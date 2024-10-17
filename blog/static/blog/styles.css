@@ -1,0 +1,77 @@
+/* static/blog/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;  /* Используем flex для бокового меню */
+}
+
+.sidebar {
+    width: 200px;  /* Ширина бокового меню */
+    background-color: #4CAF50;  /* Цвет фона меню */
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 20px;  /* Отступ справа */
+}
+
+.sidebar h2 {
+    color: white;  /* Цвет заголовка */
+}
+
+.sidebar ul {
+    list-style-type: none;  /* Убираем маркеры */
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;  /* Отступ между пунктами */
+}
+
+.sidebar ul li a {
+    color: white;  /* Цвет ссылок */
+    text-decoration: none;  /* Убираем подчеркивание */
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;  /* Подчеркивание при наведении */
+}
+
+.content {
+    flex: 1;  /* Основной контент займет оставшуюся ширину */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+.errorlist {
+    color: red;
+    list-style: none;
+    padding: 0;
+}

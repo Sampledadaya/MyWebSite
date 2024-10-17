@@ -1,0 +1,18 @@
+<!-- templates/blog/sidebar.html -->
+<div class="sidebar">
+    <h2>Навигация</h2>
+    <ul>
+        <li><a href="{% url 'index' %}">Главная</a></li>
+        <li><a href="{% url 'register' %}">Регистрация</a></li>
+        <li><a href="{% url 'login' %}">Вход</a></li>
+        <li><a href="{% url 'password_reset' %}">Сброс пароля</a></li>
+        <li><a href="{% url 'article_create' %}">Создать статью</a></li>
+        <li><a href="{% url 'article_list' %}">Список статей</a></li>
+    </ul>
+    {% if user.is_authenticated %}
+        <h3>Привет, {{ user.username }}!</h3>
+        <a href="{% url 'logout' %}">
+            <button>Выход</button>
+        </a>
+    {% endif %}
+</div>
