@@ -1,8 +1,7 @@
 from django.contrib import admin
-from django.urls import path
-from blog import views
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.hello_world),  # Главная страница с приветственным сообщением
+    path('', include('blog.urls')),  # Подключаем URL-ы приложения blog
 ]
